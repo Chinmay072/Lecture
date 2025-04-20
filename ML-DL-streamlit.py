@@ -24,7 +24,7 @@ def load_models():
 def load_data():
     try:
         # Update the path to your CSV file
-        df = pd.read_csv("rt-iot22.csv")
+        df = pd.read_csv(r"rt-iot22.csv")
         return df
     except Exception as e:
         st.error(f"Error loading data: {e}")
